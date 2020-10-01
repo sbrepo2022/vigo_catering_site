@@ -1,0 +1,17 @@
+.social {
+    position: relative;
+    background-color: $bg_grey_color;
+    padding-top: $section_padding;
+
+    &-icon {
+        height: 3.5rem;
+    }
+
+    &-block {
+        margin-bottom: $section_padding;
+    }
+}
+
+.instagram-media {
+    max-width: 100%;
+}

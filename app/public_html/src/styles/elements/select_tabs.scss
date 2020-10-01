@@ -1,0 +1,61 @@
+%select-tabs-padding {
+    @extend %button-padding;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include screen-md {
+        & {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+}
+
+.select-tabs {
+    position: relative;
+
+    border-radius: $button_round;
+    @include button-border($line_grey_color);
+    background-color: $bg_color;
+
+    a {
+        position: relative;
+        display: inline-block;
+
+        @extend %select-tabs-padding;
+
+        color: $text_grey_color;
+        transition: color $def_transition_time ease;
+
+        &.active {
+            color: $bg_color;
+            font-weight: 700;
+        }
+    }
+
+    .highlighter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+
+        border-radius: $button_round;
+        @extend %select-tabs-padding;
+
+        background-color: $primary_color;
+        box-shadow: 0px 0px 8px adjust-color($primary_color, $alpha: -0.4);
+
+        transition-property: left, width;
+        transition-duration: $def_transition_time;
+        transition-timing-function: ease;
+
+    }
+
+    &-wrapper {
+        text-align: center;
+
+        .select-tabs {
+            display: inline-flex;
+        }
+    }
+}

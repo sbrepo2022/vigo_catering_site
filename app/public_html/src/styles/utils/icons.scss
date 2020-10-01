@@ -1,0 +1,11 @@
+.icon {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-inline {
+        display: inline-block;
+        width: auto;
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    &-logo {
+        width: auto;
+        height: 4rem;
+    }
+
+    &-menu {
+        margin-left: auto;
+
+        & > * {
+            margin-left: 1em;
+        }
+    }
+
+    &-sticky {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+
+        border-bottom: $line_grey_color solid $border_width;
+        background-color: $bg_color;
+
+        li {
+            display: inline-block;
+
+            & > a {
+                display: block;
+                padding:1em 1.5em 1em 0;
+
+                &.active {
+                    color: $text_color;
+                }
+            }
+        }
+    }
+}

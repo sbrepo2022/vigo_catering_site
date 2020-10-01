@@ -1,0 +1,50 @@
+.scope {
+    background-color: $bg_grey_color;
+    text-align: center;
+    padding-top: $section_padding;
+
+    &-ad {
+        position: relative;
+
+        padding-right: 3rem;
+        padding-left: 3rem;
+        margin-bottom: $section_padding;
+
+        &::after {
+            content: '';
+            display: none;
+
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            background-color: $line_grey_color;
+            width: $border_width;
+            height: 2rem;
+
+            @include screen-md {
+                display: block;
+            }
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+
+    &-img {
+        display: inline-block;
+
+        height: 3.7rem;
+        width: auto;
+
+        margin-bottom: 1.5rem;
+    }
+
+    &-separator {
+        width: $border_width;
+        height: 1rem;
+        background-color: $line_grey_color;
+    }
+}

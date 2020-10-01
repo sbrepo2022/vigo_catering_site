@@ -1,0 +1,39 @@
+%button-padding {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+@mixin button-border($color) {
+    border: $color solid $border_width;
+}
+
+.button-primary {
+    background-color: $primary_color;
+    color: $bg_color;
+
+    border-radius: $button_round;
+    @extend %button-padding;
+    font-weight: 700;
+
+    transition: background-color $def_transition_time ease;
+    &:hover {
+        background-color: adjust-color($primary_color, $lightness: -10%);
+    }
+}
+
+.button-primary.button-outlined {
+    background-color: $bg_color;
+    color: $primary_color;
+
+    border-radius: $button_round;
+    @include button-border($primary_color);
+    @extend %button-padding;
+    font-weight: 700;
+
+    transition: background-color $def_transition_time ease;
+    &:hover {
+        background-color: adjust-color($bg_color, $lightness: -5%);
+    }
+}

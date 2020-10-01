@@ -1,0 +1,18 @@
+%input-padding {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.input-text {
+    border: none;
+    background-color: $bg_grey_color;
+    width: 100%;
+    border-radius: 0.5rem;
+    @extend %input-padding;
+}
+
+textarea {
+    resize: none;
+}

@@ -1,0 +1,41 @@
+.menu-link {
+    color: $text_grey_color;
+    font-weight: 700;
+
+    transition: color $def_transition_time ease;
+
+    &:hover {
+        color: $text_color;
+    }
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.std-text {
+    font-size: 1.15rem;
+
+    &-bold {
+        font-size: 1.15rem;
+        font-weight: 700;
+    }
+}
+
+.big-text {
+    font-size: 1.3rem;
+
+    &-bold {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
+
+.grey-text {
+    color: $text_grey_color;
+}
+
+.white-text {
+    color: $bg_color;
+}

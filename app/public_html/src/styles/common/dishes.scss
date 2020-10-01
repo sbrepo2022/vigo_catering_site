@@ -1,0 +1,130 @@
+.dishes {
+    position: relative;
+    overflow: hidden;
+    padding-top: $section_padding;
+
+    &-type-tabs {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+
+        a {
+            position: relative;
+            display: inline-block;
+            color: $text_grey_color;
+            text-align: center;
+            padding-left: 3rem;
+            padding-right: 3rem;
+
+            &::after {
+                content: '';
+
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+
+                background-color: $line_grey_color;
+                width: $border_width;
+                height: 2rem;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+
+            &.active {
+                color: $text_color;
+                font-weight: 700;
+            }
+        }
+
+        .icon-inline {
+            height: 2rem;
+        }
+    }
+
+    &-card-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    &-bg-img {
+        $parent: &;
+
+        position: absolute;
+        width: auto;
+        z-index: -1;
+
+        &-1 {
+            @extend #{$parent};
+
+            top: 8rem;
+            left: 0;
+
+            height: 15rem;
+        }
+
+        &-2 {
+            @extend #{$parent};
+
+            bottom: 5rem;
+            right: 0;
+
+            height: 15rem;
+        }
+    }
+}
+
+.dish {
+    &-card {
+        position: relative;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: $section_padding;
+
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        @include screen-md {
+            & {
+                flex: 0 0 33.3333333%;
+                max-width: 33.3333333%;
+            }
+        }
+
+        @include screen-lg {
+            & {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+        }
+    }
+
+    &-name {
+        display: block;
+        height: 3.5rem;
+    }
+
+    &-price {
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+    }
+
+    &-descr {
+        margin-bottom: 3.5rem;
+    }
+
+    &-tab {
+        overflow-x: auto;
+    }
+
+    &-row {
+        margin: 0;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: visible;
+    }
+}

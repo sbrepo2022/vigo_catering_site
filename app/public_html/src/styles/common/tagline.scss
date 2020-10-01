@@ -1,0 +1,65 @@
+.tagline {
+    position: relative;
+    overflow: hidden;
+    height: 45rem;
+
+    &-description {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1.1em;
+        color: $text_color;
+        margin-top: 7rem;
+
+        @include screen-md {
+            & {
+                padding-right: 6rem;
+            }
+        }
+
+    }
+
+    @include screen-md {
+        & {
+            height: 40rem;
+        }
+    }
+
+    @include screen-xl {
+        & {
+            height: 40rem;
+        }
+    }
+
+    &-icon {
+        height: 1.2em !important;
+        margin-bottom: -0.2em;
+    }
+
+    &-bg-img {
+        position: absolute;
+        width: auto;
+        right: 0;
+
+        bottom: -40%;
+        height: 40rem;
+
+        @include screen-md {
+            & {
+                top: 50%;
+                transform: translate(0, -55%);
+                height: 35rem;
+            }
+        }
+    }
+
+    &-overflow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background-color: $bg_color;
+        opacity: 0.5;
+    }
+}
