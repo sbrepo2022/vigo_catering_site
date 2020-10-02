@@ -68,8 +68,15 @@
         &-2 {
             @extend #{$parent};
 
-            bottom: 5rem;
+            bottom: -2rem;
             right: 0;
+
+            @include screen-md {
+                & {
+                    bottom: 5rem;
+                    right: 0;
+                }
+            }
 
             height: 15rem;
         }

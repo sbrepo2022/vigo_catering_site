@@ -20,16 +20,27 @@
     }
 
     &-header {
+        position: relative;
         display: block;
         width: 100%;
         text-align: left;
 
+        font-weight: 700;
+        font-size: 1.7rem;
+
         margin-bottom: 0.5rem;
+
+        span {
+            display: block;
+            padding-left: 3rem;
+        }
 
         &::before {
             content: '-';
 
-            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0.3rem;
             vertical-align: middle;
 
             width: 3rem;

@@ -9,7 +9,7 @@
     <!-- libs css -->
     <link rel="stylesheet" href="/dist/libs/bootstrap/css/bootstrap.min.css">
     <!-- app css -->
-    <link rel="stylesheet" href="/dist/css/app.min.css">
+    <link rel="stylesheet" href="/dist/css/app.min.css?v=<?= rand(); ?>">
   </head>
   <body data-spy="scroll" data-target="#headerSticky" data-offset="200">
     <header>
@@ -320,7 +320,7 @@
                                         <div class="grey-text">80 гр / 140 ккал</div>
                                         <div class="std-text-bold dish-name mb-1">Салат с фетой</div>
                                         <!--<div class="std-text">Описание</div>-->
-                                        <div class="grey-text dish-descr">Романо, фета, томаты... ...что ещё нужно для вкусного салата?</div>
+                                        <div class="grey-text dish-descr">Романо, фета, томаты... что ещё нужно для вкусного салата?</div>
                                         <div class="section-title dish-price"></div>
                                     </div>
                                 </div>
@@ -1221,20 +1221,20 @@
                     <div class="container">
                         <div class="row explain-group">
                             <div class="explain-elem col-md-3 col-6">
-                                <div class="explain-number active" data-index="0">1</div>
-                                <div class="std-text w-75">Работодатель заключает с нами договор</div>
+                                <div class="explain-number" data-index="0">1</div>
+                                <div class="std-text w-75">Сообщаете данные для регистрации менеджеру</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="1">2</div>
-                                <div class="std-text w-75">Каждому сотруднику выдается доступ в личный кабинет</div>
+                                <div class="std-text w-75">Получаете доступ в личный кабинет</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="2">3</div>
-                                <div class="std-text w-75">Сотрудник заказывает блюда с доставкой в офис</div>
+                                <div class="std-text w-75">Выбираете, что хотите заказать</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="3">4</div>
-                                <div class="std-text w-75">Работодалель отслеживает расходы всех сотрудников</div>
+                                <div class="std-text w-75">Курьер привозит вам обед</div>
                             </div>
                         </div>
                     </div>
@@ -1243,7 +1243,7 @@
                     <div class="container">
                         <div class="row explain-group">
                             <div class="explain-elem col-md-3 col-6">
-                                <div class="explain-number active" data-index="0">1</div>
+                                <div class="explain-number" data-index="0">1</div>
                                 <div class="std-text w-75">Работодатель заключает с нами договор</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
@@ -1272,43 +1272,97 @@
                     <div class="questions-description col-md-4 col-12 text-md-left text-center">
                         <div class="section-title mb-2">Частые вопросы</div>
                         <div class="std-text grey-text mb-4">Если вы не нашли ответ на ваш вопрос, наши менеджеры свяжутся с вами и помогут</div>
-                        <tab-pane fade dishes-tab class="button-primary mt-2">Получить консультацию</button>
+                        <button class="button-primary mt-2" data-toggle="modal" data-target="#feedbackModal">Получить консультацию</button>
                     </div>
                     <div id="questionsBlock" class="questions-content col-md-8 col-12">
 
                         <div class="questions-block">
                             <button id="questionHeading1" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse1" aria-expanded="false" aria-controls="questionCollapse1">
-                                <div class="section-title">Вопрос</div>
+                                <span>Где вы это всё готовите?</span>
                             </button>
                             <div id="questionCollapse1" class="questions-answer std-text collapse" aria-labelledby="questionHeading1" data-parent="#questionsBlock">
-                                Соображения высшего порядка, а также реализация намеченного плана развития требует от нас системного анализа экономической целесообразности принимаемых решений. Равным образом реализация намеченного плана развития влечет за собой процесс внедрения и модернизации существующих финансовых и административных условий! Значимость этих проблем настолько очевидна, что консультация с профессионалами из IT напрямую зависит от системы масштабного изменения ряда параметров.
+                                Все блюда мы готовим на производстве в центре Екатеринбурга, с использованием современного оборудования. Так вы получаете самые вкусные блюда прямо из под ножа.
                             </div>
                         </div>
 
                         <div class="questions-block">
                             <button id="questionHeading2" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse2" aria-expanded="false" aria-controls="questionCollapse2">
-                                <div class="section-title">Вопрос</div>
+                                <span>В чём привозите еду?</span>
                             </button>
                             <div id="questionCollapse2" class="questions-answer std-text collapse" aria-labelledby="questionHeading2" data-parent="#questionsBlock">
-                                Соображения высшего порядка, а также реализация намеченного плана развития требует от нас системного анализа экономической целесообразности принимаемых решений. Равным образом реализация намеченного плана развития влечет за собой процесс внедрения и модернизации существующих финансовых и административных условий! Значимость этих проблем настолько очевидна, что консультация с профессионалами из IT напрямую зависит от системы масштабного изменения ряда параметров.
+                                Каждое блюдо упаковано в индивидуально и запаяна специальной пленкой, чтобы увеличить срок хранения.
                             </div>
                         </div>
 
                         <div class="questions-block">
                             <button id="questionHeading3" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse3" aria-expanded="false" aria-controls="questionCollapse3">
-                                <div class="section-title">Вопрос</div>
+                                <span>Сколько хранится еда?</span>
                             </button>
                             <div id="questionCollapse3" class="questions-answer std-text collapse" aria-labelledby="questionHeading3" data-parent="#questionsBlock">
-                                Соображения высшего порядка, а также реализация намеченного плана развития требует от нас системного анализа экономической целесообразности принимаемых решений. Равным образом реализация намеченного плана развития влечет за собой процесс внедрения и модернизации существующих финансовых и административных условий! Значимость этих проблем настолько очевидна, что консультация с профессионалами из IT напрямую зависит от системы масштабного изменения ряда параметров.
+                                Мы готовим еду исключительно из натуральных ингредиентов, поэтому рекомендованное время употребления любого нашего блюда — 72 часа (при сохранности упаковки и хранении в холодильнике).
                             </div>
                         </div>
 
                         <div class="questions-block">
                             <button id="questionHeading4" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse4" aria-expanded="false" aria-controls="questionCollapse4">
-                                <div class="section-title">Вопрос</div>
+                                <span>Можно ли разогревать блюдо в контейнерах?</span>
                             </button>
                             <div id="questionCollapse4" class="questions-answer std-text collapse" aria-labelledby="questionHeading4" data-parent="#questionsBlock">
-                                Соображения высшего порядка, а также реализация намеченного плана развития требует от нас системного анализа экономической целесообразности принимаемых решений. Равным образом реализация намеченного плана развития влечет за собой процесс внедрения и модернизации существующих финансовых и административных условий! Значимость этих проблем настолько очевидна, что консультация с профессионалами из IT напрямую зависит от системы масштабного изменения ряда параметров.
+                                Да, можно. Мы используем пищевые боксы, которые предназначены для разогрева в СВЧ-печи.
+                            </div>
+                        </div>
+
+                        <div class="questions-block">
+                            <button id="questionHeading5" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse5" aria-expanded="false" aria-controls="questionCollapse5">
+                                <span>Во сколько привозят еду?</span>
+                            </button>
+                            <div id="questionCollapse5" class="questions-answer std-text collapse" aria-labelledby="questionHeading5" data-parent="#questionsBlock">
+                                Время доставки обговаривается индивидуально. Обычно это с 10:00 до 13:00.
+                            </div>
+                        </div>
+
+                        <div class="questions-block">
+                            <button id="questionHeading6" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse6" aria-expanded="false" aria-controls="questionCollapse6">
+                                <span>Я могу выбрать, что заказать?</span>
+                            </button>
+                            <div id="questionCollapse6" class="questions-answer std-text collapse" aria-labelledby="questionHeading6" data-parent="#questionsBlock">
+                                Да, конечно. У вас будет выбор из 4 меню. В каждом меню вы также можете выбрать разные блюда.
+                            </div>
+                        </div>
+
+                        <div class="questions-block">
+                            <button id="questionHeading7" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse7" aria-expanded="false" aria-controls="questionCollapse7">
+                                <span>Как производится заказ?</span>
+                            </button>
+                            <div id="questionCollapse7" class="questions-answer std-text collapse" aria-labelledby="questionHeading7" data-parent="#questionsBlock">
+                                Вам выдается доступ в личный кабинет, в котором вы можете заказывать еду на завтра или неделю вперёд.
+                            </div>
+                        </div>
+
+                        <div class="questions-block">
+                            <button id="questionHeading8" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse8" aria-expanded="false" aria-controls="questionCollapse8">
+                                <span>Как оплачивать?</span>
+                            </button>
+                            <div id="questionCollapse8" class="questions-answer std-text collapse" aria-labelledby="questionHeading8" data-parent="#questionsBlock">
+                                1) Ваш работодатель заключил с нами договор и вычитает стоимость обедов у вас из зарплаты/компенсирует стоимость обедов.<br>2) Вы оплачиваете заказ самостоятельно при заказе на сайте.
+                            </div>
+                        </div>
+
+                        <div class="questions-block">
+                            <button id="questionHeading9" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse9" aria-expanded="false" aria-controls="questionCollapse9">
+                                <span>Могу я отслеживать свои расходы?</span>
+                            </button>
+                            <div id="questionCollapse9" class="questions-answer std-text collapse" aria-labelledby="questionHeading9" data-parent="#questionsBlock">
+                                Да, все ваши расходы будут хранится у вас в личном кабинете.
+                            </div>
+                        </div>
+
+                        <div class="questions-block">
+                            <button id="questionHeading10" class="questions-header collapsed nofocus" data-toggle="collapse" data-target="#questionCollapse10" aria-expanded="false" aria-controls="questionCollapse10">
+                                <span>Указаны ли где-либо КБЖУ каждого блюда?</span>
+                            </button>
+                            <div id="questionCollapse10" class="questions-answer std-text collapse" aria-labelledby="questionHeading10" data-parent="#questionsBlock">
+                                Да, в личном кабинете в меню указан состав и КБЖУ.
                             </div>
                         </div>
 
@@ -1320,8 +1374,8 @@
         <section class="social" id="socialSection">
             <div class="section-title text-center mb-4">Наши соцсети</div>
             <div class="text-center mb-4">
-                <a href="#"><img class="lazy icon-inline social-icon mr-4" data-src="/dist/resources/icons/vk-icon.svg"></a>
-                <a href="#"><img class="lazy icon-inline social-icon" data-src="/dist/resources/icons/instagram-icon.svg"></a>
+                <a href="https://vk.com/vigo.catering" target="_blank"><img class="lazy icon-inline social-icon mr-4" data-src="/dist/resources/icons/vk-icon.svg"></a>
+                <a href="https://www.instagram.com/vigo.catering/" target="_blank"><img class="lazy icon-inline social-icon" data-src="/dist/resources/icons/instagram-icon.svg"></a>
             </div>
             <div class="overflow-auto">
                 <div class="container">
@@ -1399,7 +1453,7 @@
     <script src="/dist/libs/lazyload/jquery.lazy.min.js"></script>
     <script src="/dist/libs/lazyload/jquery.lazy.script.min.js"></script>
     <!-- app js -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/dist/js/app.min.js?v=<?= rand(); ?>"></script>
     <!-- instagram js -->
     <script class="lazy" data-src="//www.instagram.com/embed.js"></script>
   </body>
