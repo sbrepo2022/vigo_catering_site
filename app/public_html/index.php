@@ -1234,7 +1234,7 @@
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="3">4</div>
-                                <div class="explain-text std-text w-75">Курьер привозит вам обед</div>
+                                <div class="explain-text std-text w-75">Курьер привозит вам обед<br><br></div>
                             </div>
                         </div>
                     </div>
