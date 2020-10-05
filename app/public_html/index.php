@@ -1290,7 +1290,7 @@
                                 <span>В чём привозите еду?</span>
                             </button>
                             <div id="questionCollapse2" class="questions-answer std-text collapse" aria-labelledby="questionHeading2" data-parent="#questionsBlock">
-                                Каждое блюдо упаковано в индивидуально и запаяна специальной пленкой, чтобы увеличить срок хранения.
+                                Каждое блюдо упаковано индивидуально и запаяно специальной пленкой, чтобы увеличить срок хранения.
                             </div>
                         </div>
 
