@@ -156,7 +156,7 @@
                                         <div class="ratio-1-1">
                                             <div class="ratio-wrapper lazy icon" data-src="/dist/resources/images/dishes/lite_soup_1.png"></div>
                                         </div>
-                                        <div class="grey-text">80 гр / 75 ккал</div>
+                                        <div class="grey-text">200 гр / 238 ккал</div>
                                         <div class="std-text-bold dish-name mb-1">Гороховый суп с копченостями</div>
                                         <!--<div class="std-text">Описание</div>-->
                                         <div class="grey-text dish-descr">Нежный гороховый суп с беконом и копчёной грудинкой</div>
@@ -433,7 +433,7 @@
                                         <div class="ratio-1-1">
                                             <div class="ratio-wrapper lazy icon" data-src="/dist/resources/images/dishes/lite_soup_1.png"></div>
                                         </div>
-                                        <div class="grey-text">100 гр / 94 ккал</div>
+                                        <div class="grey-text">250 гр / 298 ккал</div>
                                         <div class="std-text-bold dish-name mb-1">Гороховый суп с копченостями</div>
                                         <!--<div class="std-text">Описание</div>-->
                                         <div class="grey-text dish-descr">Нежный гороховый суп с беконом и копчёной грудинкой</div>
@@ -1024,7 +1024,7 @@
                                         <div class="ratio-1-1">
                                             <div class="ratio-wrapper lazy icon" data-src="/dist/resources/images/dishes/lux_first_1.png"></div>
                                         </div>
-                                        <div class="grey-text">350г / 500 ккал</div>
+                                        <div class="grey-text">250г / 375 ккал</div>
                                         <div class="std-text-bold dish-name mb-1">Голубцы</div>
                                         <!--<div class="std-text">Описание</div>-->
                                         <div class="grey-text dish-descr">Необыкновенные голубцы и баранины и говядины, подается со свежими овощами</div>
@@ -1034,7 +1034,7 @@
                                         <div class="ratio-1-1">
                                             <div class="ratio-wrapper lazy icon" data-src="/dist/resources/images/dishes/lux_first_2.png"></div>
                                         </div>
-                                        <div class="grey-text">350г / 500 ккал</div>
+                                        <div class="grey-text">250г / 314 ккал</div>
                                         <div class="std-text-bold dish-name mb-1">Индейка с фасолью и грибами</div>
                                         <!--<div class="std-text">Описание</div>-->
                                         <div class="grey-text dish-descr">Диетическое филе индейки со стручковой фасолью и шампиньонами</div>
@@ -1044,7 +1044,7 @@
                                         <div class="ratio-1-1">
                                             <div class="ratio-wrapper lazy icon" data-src="/dist/resources/images/dishes/lux_first_3.png"></div>
                                         </div>
-                                        <div class="grey-text">350г / 500 ккал</div>
+                                        <div class="grey-text">250г / 254 ккал</div>
                                         <div class="std-text-bold dish-name mb-1">Тефтели по-французски с диетическим пюре</div>
                                         <!--<div class="std-text">Описание</div>-->
                                         <div class="grey-text dish-descr">Сочные тефтели из ягненка с нежнейшим пюре из тыквы, картофеля и моркови</div>
@@ -1244,7 +1244,7 @@
                         <div class="row explain-group">
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="0">1</div>
-                                <div class="explain-text std-text w-75">Работодатель заключает с нами договор</div>
+                                <div class="explain-text std-text w-75">Руководитель подписывает с нами договор</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="1">2</div>

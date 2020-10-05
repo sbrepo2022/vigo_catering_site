@@ -32,7 +32,7 @@ $(function() {
         }
     });*/
 
-    let scroll_spy_2 = new scroll_spy.ScrollSpy('#explainSection', $(window).height() * 0.7, $(window).height() * 0.1, 5, function (index) {
+    let scroll_spy_2 = new scroll_spy.ScrollSpy('#explainSection', $(window).height() * 0.7, $(window).height() * 0.15, 5, function (index) {
         for (let i = 1; i < index + 1; i++) {
             $(`.explain-number[data-index=${i - 1}]`).addClass('active');
         }
