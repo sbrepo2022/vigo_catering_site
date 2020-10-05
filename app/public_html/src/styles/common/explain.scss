@@ -13,10 +13,12 @@
         }
     }
 
+
+
     &-elem {
         margin-bottom: $section_padding;
-        opacity: 0.0;
-        transition: opacity .4s ease;
+        opacity: 1.0;
+        transition: opacity 1.0s ease;
 
         &.active {
             opacity: 1.0;

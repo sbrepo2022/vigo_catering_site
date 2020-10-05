@@ -1217,46 +1217,46 @@
                 </div>
             </nav>
             <div class="tab-content">
-                <div class="tab-pane fade show active" id="employeePane" role="tabpanel" aria-labelledby="employeeTab">
+                <div class="tab-pane show active" id="employeePane" role="tabpanel" aria-labelledby="employeeTab">
                     <div class="container">
                         <div class="row explain-group">
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="0">1</div>
-                                <div class="std-text w-75">Сообщаете данные для регистрации менеджеру</div>
+                                <div class="explain-text std-text w-75">Сообщаете данные для регистрации менеджеру</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="1">2</div>
-                                <div class="std-text w-75">Получаете доступ в личный кабинет</div>
+                                <div class="explain-text std-text w-75">Получаете доступ в личный кабинет</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="2">3</div>
-                                <div class="std-text w-75">Выбираете, что хотите заказать</div>
+                                <div class="explain-text std-text w-75">Выбираете, что хотите заказать</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="3">4</div>
-                                <div class="std-text w-75">Курьер привозит вам обед</div>
+                                <div class="explain-text std-text w-75">Курьер привозит вам обед</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="employerPane" role="tabpanel" aria-labelledby="employerTab">
+                <div class="tab-pane" id="employerPane" role="tabpanel" aria-labelledby="employerTab">
                     <div class="container">
                         <div class="row explain-group">
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="0">1</div>
-                                <div class="std-text w-75">Работодатель заключает с нами договор</div>
+                                <div class="explain-text std-text w-75">Работодатель заключает с нами договор</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="1">2</div>
-                                <div class="std-text w-75">Каждому сотруднику выдается доступ в личный кабинет</div>
+                                <div class="explain-text std-text w-75">Каждому сотруднику выдается доступ в личный кабинет</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="2">3</div>
-                                <div class="std-text w-75">Сотрудник заказывает блюда с доставкой в офис</div>
+                                <div class="explain-text std-text w-75">Сотрудник заказывает блюда с доставкой в офис</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="3">4</div>
-                                <div class="std-text w-75">Работодалель отслеживает расходы всех сотрудников</div>
+                                <div class="explain-text std-text w-75">Работодалель отслеживает расходы всех сотрудников</div>
                             </div>
                         </div>
                     </div>
@@ -1400,8 +1400,6 @@
                     <img class="lazy icon-inline footer-logo mb-5" data-src="/dist/resources/images/vigo-logo-white.svg" alt="">
                     <div class="white-text">Телефон</div>
                     <div class="white-text std-text-bold mb-4">8 (800) 222 96-40</div>
-                    <div class="white-text">Адрес</div>
-                    <div class="white-text std-text-bold mb-4">Москва, улица Октября 23</div>
                 </div>
             </div>
         </section>

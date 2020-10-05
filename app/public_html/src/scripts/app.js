@@ -7,7 +7,7 @@ $(function() {
     $('.lazy').lazy();
 
     // animation tagline
-    let anim_text_1 = new anim_text.AnimText('.anim-add-text', 500, 2000, 100, 40);
+    let anim_text_1 = new anim_text.AnimText('.anim-add-text', 500, 600, 120, 40);
     anim_text_1.startPrinting();
     $('.anim-add-text').removeClass('d-none');
 
@@ -19,23 +19,20 @@ $(function() {
     select_tabs_2.bind();
 
     // scroll spy
-    let scroll_spy_1 = new scroll_spy.ScrollSpy('#explainSection', $(window).height() * 0.5, $(window).height() * 0.5, 1, function (index) {
+    /*let scroll_spy_1 = new scroll_spy.ScrollSpy('#explainSection', $(window).height() * 0.7, $(window).height() * 0.7, 1, function (index) {
         switch (index) {
             case 0:
                 $('.explain-group').each(function() {
                     for (let i = 0; i < $(this).children().length; i++) {
                         setTimeout(() => {
                             $($(this).children().get(i)).addClass('active');
-                        }, 200 * i);
-                        /*setTimeout(() => {
-                            $($($(this).children().get(i)).find('.explain-number')).addClass('active');
-                        }, 200 * (i + 1));*/
+                        }, 100 * i);
                     }
                 });
         }
-    });
+    });*/
 
-    let scroll_spy_2 = new scroll_spy.ScrollSpy('#explainSection', $(window).height() * 0.4, $(window).height() * 0.5, 5, function (index) {
+    let scroll_spy_2 = new scroll_spy.ScrollSpy('#explainSection', $(window).height() * 0.7, $(window).height() * 0.1, 5, function (index) {
         for (let i = 1; i < index + 1; i++) {
             $(`.explain-number[data-index=${i - 1}]`).addClass('active');
         }
