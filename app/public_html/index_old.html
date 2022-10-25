@@ -8,8 +8,10 @@
 
     <!-- libs css -->
     <link rel="stylesheet" href="/dist/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/libs/snackbar/snackbar.min.css">
     <!-- app css -->
     <link rel="stylesheet" href="/dist/css/app.min.css?v=<?= rand(); ?>">
+
   </head>
   <body data-spy="scroll" data-target="#headerSticky" data-offset="200">
     <header>
@@ -17,7 +19,7 @@
             <img class="lazy header-logo" data-src="/dist/resources/images/vigo-logo.svg"/>
             <div class="header-menu">
                 <button class="button-primary button-outlined" data-toggle="modal" data-target="#feedbackModal">Связаться с нами</button>
-                <button class="button-primary">Войти</button>
+                <button onclick="location.href='http://office.vigo.catering/'" class="button-primary">Войти</button>
             </div>
         </div>
     </header>
@@ -947,6 +949,7 @@
                     </div>
 
                 </div>
+                
                 <div class="tab-pane fade" id="luxPlanPane" role="tabpanel" aria-labelledby="luxPlanTab">
                     <div class="std-text text-center mb-5">Описание люкс пакета</div>
                     <div class="std-text-bold text-center mb-5">Пример меню на день</div>
@@ -1230,7 +1233,7 @@
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="2">3</div>
-                                <div class="explain-text std-text w-75">Выбираете, что хотите заказать</div>
+                                <div class="explain-text std-text w-75">Выбираете блюдо, которое хотите заказать</div>
                             </div>
                             <div class="explain-elem col-md-3 col-6">
                                 <div class="explain-number" data-index="3">4</div>
@@ -1409,7 +1412,7 @@
     <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <form action="/">
+                <form>
                     <div class="modal-header border-0">
                         <div class="section-title">Обратная связь</div>
                         <button type="button" class="close section-title" data-dismiss="modal" aria-label="Close">
@@ -1420,15 +1423,15 @@
                         <div class="grey-text mb-2">
                             Ваше имя
                         </div>
-                        <input class="input-text mb-4" type="text" name="" value="">
+                        <input id = 'submit-name' class="input-text mb-4" type="phone">
                         <div class="grey-text mb-2">
-                            Электронная почта
+                            Номер телефона
                         </div>
-                        <input class="input-text mb-4" type="text" name="" value="">
+                        <input id = 'submit-email' class="input-text mb-4" type="text">
                         <div class="grey-text mb-2">
                             Текст сообщения
                         </div>
-                        <textarea class="input-text mb-4"></textarea>
+                        <textarea id = 'submit-message' class="input-text mb-4"></textarea>
                         <div class="grey-text mb-2 text-center">
                             Или звоните по круглосуточному телефону
                         </div>
@@ -1437,7 +1440,7 @@
                         </div>
                     </div>
                     <div class="modal-footer border-0">
-                        <button type="submit" class="button-primary flex-grow-1">Отправить</button>
+                        <button type="button" class="send-req button-primary flex-grow-1">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -1450,9 +1453,52 @@
     <script src="/dist/libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="/dist/libs/lazyload/jquery.lazy.min.js"></script>
     <script src="/dist/libs/lazyload/jquery.lazy.script.min.js"></script>
+    <script src = "/dist/libs/snackbar/snackbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
     <!-- app js -->
     <script src="/dist/js/app.min.js?v=<?= rand(); ?>"></script>
     <!-- instagram js -->
     <script class="lazy" data-src="//www.instagram.com/embed.js"></script>
+    <script>
+    $("#submit-email").mask("+7 (999) 999 99-99",{placeholder: "+7 (___) ___ __-__" });
+	$('.send-req').bind('click',function(){
+        if($('#submit-name').val() != "" && $('#submit-email').val() != "" && $('#submit-message').val() != "" &&
+        $('#submit-name').val() != " " && $('#submit-email').val() != " " && $('#submit-message').val() != " ")
+        {
+            $.ajax({
+                type:"POST",
+                url:"mail.php",
+                dataType:"json",
+                data:{
+                    name:$("#submit-name").val(),
+                    email:$('#submit-email').val(),
+                    message:$('#submit-message').val(),
+                },
+                success:function(data){
+                    if(data.status == 200)
+                    {
+                    	Snackbar.show({
+	                        text: 'Ваша заявка отправлена',
+	                        pos: 'top-center'
+	                    });
+                    }
+                },
+                error:function(){
+                    Snackbar.show({
+                        text: 'Ошибка!',
+                        pos: 'top-center'
+                    });
+                }
+            })
+        }
+        else
+        {
+            Snackbar.show({
+                text: 'Поля пустые!',
+                pos: 'top-center'
+            });
+        }
+    })
+    </script>
   </body>
 </html>

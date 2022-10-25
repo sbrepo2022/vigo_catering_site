@@ -39,3 +39,12 @@
 .white-text {
     color: $bg_color;
 }
+
+.white-link {
+    color: $bg_color;
+
+    &:hover {
+        color: $bg_color;
+        text-decoration: underline;
+    }
+}
